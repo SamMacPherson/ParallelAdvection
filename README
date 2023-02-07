@@ -1,0 +1,27 @@
+This is a 1D parallel code to solve the linear advection equation for two initial conditions:
+    1 - Step Function
+    2 - Gaussian function
+
+The code is all contained within one file 'Advection.f90'
+
+A config file is used to setup the simulation in which initial condition, boundary conditions, domain 
+CFL, simulation time, and grid points are specified.
+
+The solver scheme can be changed with 5 choices.
+
+As this is a small code there is an option to repeat the whole simulation if averages for the timings
+are desired.
+
+To compile:
+
+mpifort Advection.f90 -o Run.sh
+
+To run:
+
+mpirun -np <numprocs> Run.sh
+
+Compiler versions verified on:
+openmpi-4.1.4
+
+Note:
+Grid points must bed divisible by numprocs

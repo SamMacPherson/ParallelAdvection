@@ -1,0 +1,12 @@
+5           ! TotalTime
+6000        ! gridPoints
+-15         ! x0
+15          ! xmax
+1           ! u, velocity of wave
+'UPWIND'    ! Solver  Choices are ('LAX-F','UPWIND','LAX-W','MAC','FTCS')
+'STEP'      ! Function Choices are ('EXP2','STEP')
+0           ! Beginning BC
+1	        ! End BC
+1           ! CFL
+1           ! Number of times to run to take average of time taken
+
